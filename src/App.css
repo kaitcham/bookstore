@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f5f6fa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  outline: none;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 120px;
+}
+
+header span {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #0290ff;
+  border: 1px solid #0290ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h1 {
+  color: #0290ff;
+  font-size: 32px;
+  font-family: Poppins, sans-serif;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+.menu li a {
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+}
+
+.home {
+  padding: 40px 120px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 30px;
+  gap: 1rem;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+.book-section h4 {
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+.book-section h3 {
+  font-family: Poppins, sans-serif;
+}
+
+.buttons {
+  margin-top: 12px;
+}
+
+.buttons button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: Poppins, sans-serif;
+  color: #4386bf;
+  padding: 5px 15px;
+}
+
+.buttons button:first-child {
+  padding: 5px 10px 5px 0;
+}
+
+.buttons button:not(:last-child) {
+  border-right: 1px solid #e8e8e8;
+}
+
+.progress-section {
+  padding: 15px;
+  display: flex;
+}
+
+.progress {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.circle-wrap {
+  width: 70px;
+  height: 70px;
+}
+
+.progress-level {
+  padding-right: 15px;
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+}
+
+.progress-level p:last-child {
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+.update-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.update-progress h5 {
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+.update-progress h6 {
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 12px;
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.form-input input {
+  padding: 5px;
+}
+
+.form-input input:first-child {
+  grid-column: span 3;
 }
